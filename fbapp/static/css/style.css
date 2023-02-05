@@ -1,0 +1,131 @@
+#form-container {
+  width: 500px;
+  margin: 0 auto;
+   top: 50px;
+    position: relative;
+}
+
+.answer {
+  display: block;
+    align-items: center;
+
+}
+
+
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.my-div {
+    margin-top: 20px;
+    margin-left :20px;
+}
+.cadre {
+  background: white;
+    border: 0 none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+body {
+
+ /* background:rgb(245, 245, 220,.5);
+*/
+
+    }
+
+h1 {
+    text-align: center;
+}
+html {
+  background-image :linear-gradient(rgba(245, 245, 220,.3), rgba(245, 245, 220,.3)), url('/static/img/Quizz.png');
+    background-size: cover;
+ }
+
+
+.div-cadre{
+  background:rgba(40,7,101,.9);
+}
+
+
+
+
+.btn:hover,  .btn:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+
+.btn{
+  width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+
+
+.info_box{
+      margin-top: 150px;
+    margin-left:50%;
+    width: 500px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+    transition: all 0.3s ease;
+    top: 50px;
+    position: relative;
+}
+
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_box .info-list .info span{
+    font-weight: 600;
+    color: #007bff;
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button{
+  width: 200px;
+
+}

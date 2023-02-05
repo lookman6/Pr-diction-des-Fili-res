@@ -1,0 +1,52 @@
+<!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Projet de Prediction de filière des étudiants AP1/AP2 de l'école ENSAT
+      <a href="">réalisé par un groupe d'élèves de GINF3</a>
+    </p>
+  </section>
+  <!-- footer section -->
+  <script type="text/javascript" src="/static/js/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/js/bootstrap.js"></script>
+
+              </div>
+
+</body>
+ <script>
+ const form = document.getElementById('quiz-form');
+      const questions = form.querySelectorAll('.question');
+      const submitButton = document.getElementById('submit-button');
+      const nextButton = document.getElementById('next-button');
+
+      let currentQuestion = 0;
+
+      questions[currentQuestion].style.display = 'block';
+
+      nextButton.addEventListener('click', () => {
+var radios = document.getElementsByName("question" + currentQuestion+1);
+    var selected = false;
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        selected = true;
+        break;
+      }
+    }
+
+
+        // Masquez la question actuelle
+        questions[currentQuestion].style.display = 'none';
+        // Passez à la question suivante
+        currentQuestion++;
+        // Affichez la question suivante
+        questions[currentQuestion].style.display = 'block';
+        // Si c'est la dernière question, affichez le bouton de soumission
+        if (currentQuestion === questions.length - 1) {
+          nextButton.style.display = 'none';
+          submitButton.style.display = 'block';
+        }
+      });
+ </script>
+
+
+
+</html>
